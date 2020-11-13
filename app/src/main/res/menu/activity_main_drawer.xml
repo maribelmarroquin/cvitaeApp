@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/resumen_profesional"
+            android:icon="@drawable/reanudar"
+            android:title="Resumen Profesional" />
+        <item
+            android:id="@+id/datos_personales"
+            android:icon="@drawable/personales"
+            android:title="Datos Personales" />
+        <item
+            android:id="@+id/formacion_academica"
+            android:icon="@drawable/academico"
+            android:title="Formación Académica" />
+        <item
+            android:id="@+id/formacion_extracademica"
+            android:icon="@drawable/estudiando"
+            android:title="Formación Extra-académica" />
+        <item
+            android:id="@+id/conocimientos"
+            android:icon="@drawable/cerebro"
+            android:title="Conocimientos" />
+        <item
+            android:id="@+id/experiencia_profesional"
+            android:icon="@drawable/trabajo"
+            android:title="Experiencia Profesional" />
+        <item
+            android:id="@+id/otros_datos"
+            android:icon="@drawable/reportar"
+            android:title="Otros Datos de Interés" />
+        <item
+            android:id="@+id/objetivo_profesional"
+            android:icon="@drawable/objetivo"
+            android:title="Objetivo Profesional" />
+    </group>
+
+    <item android:title="Acciones">
+        <menu>
+            <item
+                android:id="@+id/exportar"
+                android:icon="@drawable/cv"
+                android:title="Exportar CV" />
+            <item
+                android:id="@+id/configurar"
+                android:icon="@drawable/gear"
+                android:title="Configurar Página CV" />
+            <item
+                android:id="@+id/consultado"
+                android:icon="@drawable/consulta"
+                android:title="¿Quién ha consultado?" />
+        </menu>
+    </item>
+
+</menu>

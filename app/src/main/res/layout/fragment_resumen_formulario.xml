@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.formularios.ResumenFormularioFragment">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="RESUMEN PROFESIONAL"
+        android:textColor="#507DBC"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- TODO: Update blank fragment layout -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Título: "
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txt_regTituloRes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#DAE3E5"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Resumen: "
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="600">
+
+                    <EditText
+                        android:id="@+id/txt_regResumenRes"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="#DAE3E5"
+                        android:gravity="top"
+                        android:padding="10dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cb_regVerPdfRes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Mostrar en PDF?" />
+
+            <CheckBox
+                android:id="@+id/cb_regVerPaginaRes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:text="¿Mostrar en página web?" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_regGuardarRes"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cv_primary_button"
+            android:elevation="6dp"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btn_regLimpiarRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cv_primary_button"
+            android:elevation="30dp"
+            android:text="Cancelar" />
+
+    </LinearLayout>
+
+</RelativeLayout>

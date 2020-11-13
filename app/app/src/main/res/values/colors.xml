@@ -1,0 +1,27 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<resources>
+    <color name="colorAccent">#0277bd</color>
+    <color name="colorPrimary">#58a5f0</color>
+    <color name="colorPrimaryDark">#004c8c</color>
+    <color name="secondaryColor">#0091ea</color>
+    <color name="secondaryLightColor">#64c1ff</color>
+    <color name="secondaryDarkColor">#0064b7</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+
+    <color name="colorVerde">#90ee02</color>
+    <color name="colorMorado">#6002ee</color>
+    <color name="colorAzul">#021aee</color>
+    <color name="colorRosa">#d602ee</color>
+    <color name="colorMagenta">#ee0290</color>
+    <color name="colorNaranja">#ee6002</color>
+
+    <integer-array name="alternador_colores">
+        <item>@color/colorVerde</item>
+        <item>@color/colorMorado</item>
+        <item>@color/colorRosa</item>
+        <item>@color/colorAzul</item>
+        <item>@color/colorMagenta</item>
+        <item>@color/colorNaranja</item>
+    </integer-array>
+</resources>

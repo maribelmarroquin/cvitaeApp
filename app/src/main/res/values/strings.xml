@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CVitae</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="user">{Usuario}</string>
+    <string name="titulo">Ingeniera en Sistemas Computacionales</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="acerca_de">Acerca de...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ip">http://192.168.1.67:8000/api/v1/cvitae/</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <drawable name="clr_normal">#58a5f0</drawable>
+    <drawable name="clr_pressed">#0277bd</drawable>
+
+    <string name="update">Actualizar</string>
+    <string name="cancel">Cancelar</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.edicion.ResumenEdicionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- TODO: Update blank fragment layout -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Título: "
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_edTituloRes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DAE3E5"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Resumen: "
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="600">
+
+                <EditText
+                    android:id="@+id/txt_edResumenRes"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="#DAE3E5"
+                    android:gravity="top"
+                    android:padding="10dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_edVerPdfRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="¿Mostrar en PDF?" />
+
+        <CheckBox
+            android:id="@+id/cb_edVerPaginaRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Mostrar en página web?" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

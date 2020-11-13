@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_contentVP"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLoginRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="#ffffff"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:src="@drawable/cvitae" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="@android:integer/config_shortAnimTime"
+            android:shadowDy="@android:integer/config_shortAnimTime"
+            android:text="¡Gestiona tu Curriculum Vitae y tenlo a la mano!"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/containerVP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="#ffffff"
+            android:elevation="6dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
